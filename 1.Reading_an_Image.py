@@ -1,17 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ## Reading_an_Image_in_OpenCV
-
-# ### Reading an image by Specific Path
-
-# In[1]:
-
-
 # Importing Required Libraries
-
 import cv2
-
 # define a class called ImageReader
 class ImageReader:
     def __init__(self, filename):
@@ -27,10 +15,6 @@ class ImageReader:
         else:
             return img
 
-
-# In[2]:
-
-
 # create an instance of the ImageReader
 reader = ImageReader(r"C:\PYTHON\AI_ML\OpenCV\Computer_vision.jpeg")
 # call the read_image() method
@@ -42,16 +26,11 @@ if img is not None:
     cv2.waitKey(0)
     # to close the open window
     cv2.destroyAllWindows()
-
-
 # After executing this code seperate window will be open with an image which has given in the path.
 
 # ### Reading an Image by allow the user to enter a link 
 
-# In[3]:
-
-
-# # Importing Required Libraries
+# Importing Required Libraries
 import cv2
 import urllib.request
 import numpy as np
@@ -73,10 +52,7 @@ class ImageReader:
         else:
             return img
 
-
-# In[4]:
-
-
+# create an instance of the ImageReader
 url = input("Enter the URL of the image file: ")
 reader = ImageReader(url)
 img = reader.read_image()
@@ -84,11 +60,7 @@ if img is not None:
     cv2.imshow("Image", img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-
-
 # After Executing above code It will ask you to enter an url link to diaplay an image.
-
-# In[ ]:
 
 
 
